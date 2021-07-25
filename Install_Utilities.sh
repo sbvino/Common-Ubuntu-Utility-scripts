@@ -13,4 +13,6 @@ sudo apt-get update &&
         dnsutils \
         jq \
         firewalld \
-        cron
+        cron \
+        python3-pip \
+        python3
