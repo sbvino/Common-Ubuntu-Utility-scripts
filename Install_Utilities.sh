@@ -16,3 +16,4 @@ sudo apt-get update &&
         cron \
         python3-pip \
         python3
+ln -s ~/Common-Ubuntu-Utility-scripts/update.sh ~/update.sh
