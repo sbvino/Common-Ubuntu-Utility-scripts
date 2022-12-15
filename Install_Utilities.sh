@@ -12,7 +12,6 @@ sudo apt-get update &&
         nano \
         dnsutils \
         jq \
-        firewalld \
         cron \
         python3-pip \
         python3
