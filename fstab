@@ -1,7 +1,1 @@
-//IP/Photos /mnt/S918Photos         cifs    credentials=/home/sbvino/S918.cred,vers=3.0 0 0
-//IP/QnapShare /mnt/S918QnapShare   cifs    credentials=/home/sbvino/S918.cred,vers=3.0 0 0
-//IP/Photos /mnt/D418jPhotos        cifs    credentials=/home/sbvino/D418.cred,vers=3.0 0 0
-//IP/Photos_Raw /mnt/D418jPhotosRaw cifs    credentials=/home/sbvino/D418.cred,vers=3.0 0 0
-//IP/Videos /mnt/D418jVideos        cifs    credentials=/home/sbvino/D418.cred,vers=3.0 0 0
-//IP/Photos /mnt/QPhotos            cifs    credentials=/home/sbvino/Qnap.cred,vers=3.0 0 0
-//IP/ExternalDrive /mnt/QExternal   cifs    credentials=/home/sbvino/Qnap.cred,vers=3.0 0 0
+//IP/share /mnt/folder         cifs    credentials=/home/user/file.cred,vers=3.0 0 0
