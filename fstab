@@ -1,1 +1,1 @@
-//IP/share /mnt/folder         cifs    credentials=/home/user/file.cred,vers=3.0 0 0
+//IP/share /mnt/folder         cifs    credentials=/home/user/file.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
