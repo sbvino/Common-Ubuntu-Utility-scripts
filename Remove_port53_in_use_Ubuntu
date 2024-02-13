@@ -1,0 +1,3 @@
+sudo mv /etc/systemd/resolved.conf /etc/systemd/resolved.conf.bak
+sudo mv ./resolved.conf /etc/systemd/
+sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
