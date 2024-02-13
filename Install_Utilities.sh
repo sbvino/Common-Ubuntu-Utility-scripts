@@ -6,6 +6,8 @@ sudo apt-get update &&
         apt-transport-https \
         ca-certificates \
         gnupg-agent \
+        cifs-utils \
+        nfs-common
         software-properties-common \
         net-tools \
         vim \
