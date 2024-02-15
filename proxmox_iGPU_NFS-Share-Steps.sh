@@ -1,5 +1,6 @@
 ### First Install 8.0.x because 8.1 install fails
-
+    ## Enable Copy Paste on VM
+    ## https://silicon.blog/2023/01/12/how-to-enable-copy-and-paste-function-on-your-proxmox-web-console-without-install-additional-software-in-your-vm/#:~:text=It%20means%20copy%2Dand%2Dpaste,solution%20is%20to%20enable%20xterm.
 
 # 192.168.11.196:/mnt/nvme /mnt/nvme nfs4 defaults,user,exec,_netdev 0 0
 # BC:24:11:D7:91:CB
