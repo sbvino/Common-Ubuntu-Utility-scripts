@@ -1,4 +1,4 @@
-//IP/share /mnt/folder         cifs    credentials=/home/user/file.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+# //IP/share /mnt/folder         cifs    credentials=/home/user/file.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
 
 # Proxmox Host NVME Drive NFS Share
 192.168.0000.225:/mnt/nvme /mnt/nvme nfs4 defaults,user,exec,_netdev 0 0
@@ -22,17 +22,21 @@
 //192.168.0000.243/home /mnt/S918Home cifs credentials=/home/sbvino/syno918.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
 //192.168.0000.243/QnapShare /mnt/S918QnapShare cifs credentials=/home/sbvino/syno918.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
 
-# Qnap TS-453Be Shares
-//192.168.0000.249/Anime2 /mnt/QAnime2 cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+# Qnap TS-453Be Shares 
 
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
-//192.168.0000.249/ cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+# DataVol1
+//192.168.0000.249/Anime2 /mnt/QAnime2 cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Download /mnt/QDownload cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/home /mnt/Qhome cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Movies2 /mnt/QMovies2 cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Music2 /mnt/QMusic2 cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Photos /mnt/QPhotos cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Series2 /mnt/QSeries2 cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+
+# DataVol2
+//192.168.0000.249/MiscTemp /mnt/QMiscTemp cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Movies /mnt/QMovies cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+//192.168.0000.249/Series /mnt/QSeries cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
+
+# ExternalDrive
+//192.168.0000.249/ExternalDrive /mnt/QExternalDrive cifs credentials=/home/sbvino/qnap.cred,vers=3.0,uid=1000,gid=1000,noauto,x-systemd.automount 0 0
