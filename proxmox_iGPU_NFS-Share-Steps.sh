@@ -1,8 +1,8 @@
 ### First Install 8.0.x because 8.1 install fails
 
 
-192.168.11.196:/mnt/nvme /mnt/nvme nfs4 defaults,user,exec,_netdev 0 0
-BC:24:11:D7:91:CB
+# 192.168.11.196:/mnt/nvme /mnt/nvme nfs4 defaults,user,exec,_netdev 0 0
+# BC:24:11:D7:91:CB
 
 nano /etc/apt/sources.list.d/pve-enterprise.list
     # Proxmox VE pve-no-subscription repository provided by proxmox.com,
