@@ -26,4 +26,4 @@ sudo mkdir -p /mnt/QMovies
 sudo mkdir -p /mnt/QSeries
 sudo mkdir -p /mnt/QExternalDrive
 
-ln -s /mnt/nvme/SSD /SSD
+sudo ln -s /mnt/nvme/SSD /SSD
