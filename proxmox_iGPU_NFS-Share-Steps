@@ -1,23 +1,17 @@
+### First Install 8.0.x because 8.1 install fails
+
 
 192.168.11.196:/mnt/nvme /mnt/nvme nfs4 defaults,user,exec,_netdev 0 0
 BC:24:11:D7:91:CB
 
-nano /etc/apt/sources.list
-    deb http://ftp.debian.org/debian bookworm main contrib
-
-    deb http://ftp.debian.org/debian bookworm-updates main contrib
-
-    # security updates
-    deb http://security.debian.org bookworm-security main contrib
-
+nano /etc/apt/sources.list.d/pve-enterprise.list
     # Proxmox VE pve-no-subscription repository provided by proxmox.com,
     # NOT recommended for production use
     deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 
-nano /etc/apt/sources.list.d/pve-enterprise.list
-    #comment
 nano /etc/apt/sources.list.d/ceph.list
-    #comment
+    # Installs 8.1
+    deb http://download.proxmox.com/debian/ceph-reef bookworm no-subscription
 apt update && apt install git pve-headers mokutil -y && rm -rf /var/lib/dkms/i915-sriov-dkms* && rm -rf /usr/src/i915-sriov-dkms* && rm -rf ~/i915-sriov-dkms && KERNEL=$(uname -r); KERNEL=${KERNEL%-pve}
 cd ~
 git clone https://github.com/strongtz/i915-sriov-dkms.git
