@@ -43,6 +43,8 @@ sudo nano /etc/fstab
     /dev/nvme0n1 /mnt/nvme ext4 defaults 0 0
 systemctl daemon-reload
 mount -a
+pct set 104 -mp0 /mnt/nvme,mp=/mnt/nvme
+## Create LXC Debian Container that is privileged and follow the below steps.
 apt install nfs-kernel-server -y
 sudo systemctl start nfs-kernel-server
 sudo systemctl enable nfs-kernel-server
