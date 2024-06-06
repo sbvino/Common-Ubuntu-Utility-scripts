@@ -7,7 +7,7 @@ sudo apt-get update &&
         ca-certificates \
         gnupg-agent \
         cifs-utils \
-        nfs-common
+        nfs-common \
         software-properties-common \
         net-tools \
         vim \
